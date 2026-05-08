@@ -1,0 +1,2 @@
+select `Full name`,datediff(str_to_date(`exit date`,'%m/%d/%Y'),clean_date) as total_days 
+from employee_data.employee_data where `exit date` is not null and `exit date` <> '' order by datediff(str_to_date(`exit date`,'%m/%d/%Y'),clean_date) asc;

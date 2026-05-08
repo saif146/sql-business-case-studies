@@ -1,0 +1,12 @@
+-- select * from employee_data.employee_data;
+-- alter table employee_data.employee_data drop column salary_level
+-- alter table employee_data.employee_data add salary_level varchar(10);
+
+-- select Department,avg(`annual salary`),
+-- case 
+-- when avg(`annual salary`)>100000 then 'high'
+-- when avg(`annual salary`)>=50000 then 'medium'
+-- else 'low'
+-- end as salary_level
+-- from employee_data.employee_data group by department;
+-- select *,avg(`annual salary`) over(partition by department) from employee_data.employee_data;

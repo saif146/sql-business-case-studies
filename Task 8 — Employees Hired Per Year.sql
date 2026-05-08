@@ -1,0 +1,1 @@
+select year,count(day) as total_employee from employee_data.employee_data group by year order by count(day) desc;

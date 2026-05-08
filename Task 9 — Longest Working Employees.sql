@@ -1,0 +1,1 @@
+select `full name`,datediff(curdate(),clean_date) from employee_data.employee_data order by datediff(curdate(),clean_date) desc limit 10;

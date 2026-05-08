@@ -1,0 +1,1 @@
+select Department,Gender,avg(`annual salary`) from employee_data.employee_data   where Department is not null AND Department <> '' group by Department,Gender;
